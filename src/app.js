@@ -61,16 +61,16 @@ function handleSubmit(event) {
 
 function showCelsius(event) {
   event.preventDefault();
-  celsuiusLink.classList.remove("active");
-  fahreLink.classList.add("active");
+  celsuiusLink.classList.add("active");
+  fahreLink.classList.remove("active");
   let tempElement = document.querySelector("#temp");
   let celsiusTemp = ((fahrenheiTemp - 32) * 5) / 9;
   tempElement.innerHTML = Math.round(celsiusTemp);
 }
 
 function showFahre(event) {
-  fahreLink.classList.remove("active");
-  celsuiusLink.classList.add("active");
+  fahreLink.classList.add("active");
+  celsuiusLink.classList.remove("active");
   event.preventDefault();
   let tempElement = document.querySelector("#temp");
   tempElement.innerHTML = Math.round(fahrenheiTemp);
