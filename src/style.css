@@ -27,6 +27,12 @@ li:first-letter {
   padding: 20px;
   border: 1px solid #dadce0;
   border-radius: 5px;
+  box-shadow: rgba(23, 23, 24, 0.08) 0 8px 8px 0;
+  background-image: linear-gradient(
+    rgb(251, 251, 204) 0%,
+    #ffff 45% 55%,
+    rgb(161, 224, 241) 100%
+  );
 }
 .container {
   margin: 30px auto;
